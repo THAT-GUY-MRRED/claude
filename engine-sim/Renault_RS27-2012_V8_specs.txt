@@ -1,0 +1,235 @@
+================================================================================
+ RENAULT RS27-2012 V8  --  the engine in the Lotus E20 (2012 Formula One)
+ Compiled 2026-09-30
+================================================================================
+
+NOTE ON THE NAME
+  "E20" is the Lotus F1 Team chassis (2012 season, Raikkonen / Grosjean).
+  The engine in it is the Renault Sport F1 RS27-2012, a 2.4 L 90-degree V8.
+  The same engine powered the Red Bull RB8, Williams FW34 and Caterham CT01
+  in 2012. The RS27 family was raced from 2007 to 2013 and is derived from
+  the 2006 RS26 (Renault's first V8, itself derived from the RS25 V10).
+
+  Designed at Viry-Chatillon (Renault Sport F1, near Paris).
+  Assembled by Mecachrome, Aubigny-sur-Nere, France.
+
+  Legend:  [PUB] = published by Renault
+           [REG] = mandated by the FIA 2012 technical regulations
+           [CALC] = calculated by me from the published/regulated figures
+           [EST] = estimate / typical for the era. NOT confirmed by Renault
+
+--------------------------------------------------------------------------------
+1. HEADLINE SPECIFICATIONS
+--------------------------------------------------------------------------------
+  Designation ............ Renault RS27-2012                          [PUB]
+  Type ................... 4-stroke, reciprocating piston, naturally aspirated
+  Layout ................. V8, 90 degree bank angle                   [PUB/REG]
+  Cylinders .............. 8                                          [PUB]
+  Valves ................. 32 (2 inlet + 2 exhaust per cyl), poppet   [PUB/REG]
+  Displacement ........... 2400 cc (300 cc per cylinder)              [PUB/REG]
+  Max RPM ................ 18,000 rpm (FIA limit from 2009;
+                           19,000 in 2007-08, unlimited in 2006)      [PUB/REG]
+  Power .................. >750 bhp (typical car installation, typical
+                           temperature/pressure/humidity)             [PUB]
+  Torque at peak power ... ~297 Nm at 18,000 rpm (750 bhp)            [CALC]
+  Specific output ........ ~312 bhp/litre                             [CALC]
+  Weight ................. 95 kg (the regulation minimum; Renault ran
+                           at exactly the minimum with <1 kg ballast) [PUB/REG]
+  Parts count ............ ~2,500 parts                               [PUB]
+  Mounting ............... Mid-mounted, fully stressed chassis member
+  Clean running range .... from under 4,000 rpm to the limiter        [PUB]
+
+--------------------------------------------------------------------------------
+2. GEOMETRY / DIMENSIONS
+--------------------------------------------------------------------------------
+  Cylinder bore .......... max 98 mm                                  [REG]
+  Cylinder spacing ....... 106.5 mm (+/- 0.2 mm), fixed               [REG]
+  Crank centreline ....... at least 58 mm above the reference plane   [REG]
+  Engine CoG height ...... at least 165 mm above the reference plane  [REG]
+  Engine CoG long./lat. .. within +/- 50 mm of the engine's geometric
+                           centre                                     [REG]
+
+  Bore x stroke (Renault never published these):
+    If the full 98 mm bore is used, stroke = 39.8 mm                  [CALC]
+    (300 cc / (pi/4 x 9.8^2 cm) = 3.977 cm). All the V8 makers are
+    believed to have run at or near 98 mm. Bore/stroke ratio ~2.46.   [EST]
+    WARNING: some websites list "66 x 54.6 mm". That is wrong. It
+    only gives ~1.5 L.
+
+  Mean piston speed at 18,000 rpm (39.8 mm stroke) ... ~23.9 m/s     [CALC]
+  Piston mass ........... 250 g                                       [PUB]
+  Piston loading ........ >8,000 g; ~2 tonnes on piston + rod at
+                          18,000 rpm (300 rev/s)                      [PUB]
+
+  Crankshaft type ....... Flat-plane (180 deg), as used by all the F1
+                          V8s                                         [EST]
+  Firing order .......... Not published. Renault simulated 2-3
+                          candidate firing orders for torsional vibration
+                          and intake acoustics and picked the best    [PUB]
+
+--------------------------------------------------------------------------------
+3. MATERIALS & CONSTRUCTION
+--------------------------------------------------------------------------------
+  Engine block ........... Aluminium alloy                            [PUB]
+  Cylinder heads ......... Cast or wrought aluminium alloy            [REG]
+  Pistons ................ Aluminium alloy                            [PUB]
+                           (must be Al-Si, Al-Cu, Al-Mg or Al-Zn)     [REG]
+  Piston pins ............ Iron-based alloy, one piece                [REG]
+  Connecting rods ........ Titanium alloy, machined from one piece.
+                           Only the bolted big-end cap and an
+                           interference small-end bush are allowed    [PUB/REG]
+  Crankshaft ............. Nitrided alloy steel with tungsten-alloy
+                           counterweights (the rules cap material
+                           density at 19,000 kg/m3). No welding
+                           between the front and rear mains           [PUB/REG]
+  Camshafts .............. Iron-based alloy, one piece with lobes     [REG]
+  Valves ................. Fe, Ni, Co or Ti based alloy. Sodium- or
+                           lithium-cooled hollow valves permitted     [REG]
+  Valve springs .......... Pneumatic (compressed-air) valve return.
+                           Pressure controlled by a passive mechanical
+                           regulator or by the ECU                    [REG]
+  Timing gears ........... Iron-based alloy (gear-driven cams)        [REG]
+  Fasteners .............. Co, Fe or Ni based alloy only             [REG]
+  Coatings ............... Free, but no more than 25% of the section
+                           thickness and never over 0.8 mm. Renault
+                           developed a carbon (DLC-type) low-friction
+                           coating for the V8                         [REG/PUB]
+  BANNED anywhere on the engine: magnesium alloys, metal matrix
+    composites, intermetallics, and alloys with >5% Be, Ir or Re.
+    No carbon/composite blocks, heads or pistons.                     [REG]
+
+--------------------------------------------------------------------------------
+4. INDUCTION / FUEL / IGNITION
+--------------------------------------------------------------------------------
+  Throttle ............... 8 individual butterflies (one per cylinder)
+                           driven by a single actuator                [PUB/REG]
+  Intake ................. Fixed-length trumpets (no variable geometry
+                           intake, exhaust, valve timing or valve lift) [REG]
+  Injection .............. 1 injector per cylinder, into the side or top
+                           of the inlet port (port injection, not direct)
+                           Max fuel pressure 100 bar (Renault ran 100
+                           bar from mid-2006)                         [REG/PUB]
+  Ignition ............... High-energy inductive. One coil + one plug per
+                           cylinder                                   [PUB/REG]
+  Spark plugs ............ Semi-surface discharge                     [PUB]
+  Intake air ............. No intake-air cooling devices. No spraying
+                           anything into the intake except fuel and sump
+                           breather gases                             [REG]
+  Fuel / oil ............. Total (race fuel to FIA spec, Total lubricants)
+  Fuel used per race ..... ~220 litres (no refuelling from 2010)      [PUB]
+  Exhaust gas temp ....... up to ~900 C                               [PUB]
+  Exhaust ................ Max 2 exits, rear-facing tailpipes. 2012 rules
+                           fixed the exit position and banned
+                           off-throttle blowing                       [REG]
+
+--------------------------------------------------------------------------------
+5. LUBRICATION / COOLING
+--------------------------------------------------------------------------------
+  Oil system ............. Dry sump with multi-stage scavenging (layout
+                           carried over from the RS25 V10). Renault's
+                           focus: minimum oil flow and good scavenging to
+                           cut friction and windage                   [PUB]
+  Piston cooling ......... Oil jets (standard practice for the era)   [EST]
+  Sump breather .......... Must vent into the engine air intake       [REG]
+  Coolant header tank .... FIA relief valve, max 3.75 bar gauge       [REG]
+  Cooling ................ Must not deliberately use latent heat of
+                           vaporisation (no evaporative cooling)      [REG]
+  Auxiliaries ............ Oil and water pumps, alternator etc. must be
+                           mechanically driven from the engine at a fixed
+                           ratio to the crank (electric fuel pumps
+                           excepted)                                  [REG]
+
+--------------------------------------------------------------------------------
+6. ELECTRONICS / CONTROL
+--------------------------------------------------------------------------------
+  ECU .................... McLaren Electronic Systems standard ECU (TAG-310
+                           family), mandatory from 2008                [PUB]
+  System voltage ......... 12 V nominal; primary regulated voltage max
+                           17.0 V DC                                  [REG]
+  Throttle response ...... max 50 ms from pedal input to torque demand
+                           being met                                  [REG]
+  Idle target ............ max 5,000 rpm                              [REG]
+  Pedal map .............. only 2 allowed: dry tyres / wet-inter tyres [REG]
+  Torque map ............. must increase steadily with pedal position.
+                           Above 5,000 rpm, gradient no lower than
+                           -0.030 Nm/rpm                              [REG]
+  Ignition offsets ....... only above 80% throttle and 15,000 rpm, and
+                           only to cut cylinder pressure for
+                           reliability                                [REG]
+
+--------------------------------------------------------------------------------
+7. KERS (2012)
+--------------------------------------------------------------------------------
+  Max power in/out ....... 60 kW (~80 bhp)                            [REG]
+  Max energy released .... 400 kJ per lap (~6.7 s at full power)      [REG]
+  Renault supplied the KERS motor-generator; battery and packaging were
+  largely the team's (Lotus). The KERS motor was on the front of the
+  engine, driven from the crank.                                      [EST]
+
+--------------------------------------------------------------------------------
+8. LIFE / USAGE
+--------------------------------------------------------------------------------
+  Engines per driver ..... 8 per season (2009+)                       [REG]
+  Design life ............ ~2,500 km validated, up to ~3,000 km per
+                           unit (vs ~400-800 km in the V10 era)       [PUB]
+  Homologation ........... Spec frozen to the 2006 Japanese GP spec.
+                           Changes only for reliability, installation or
+                           "housekeeping"                             [REG]
+  Production ............. 1,271 RS26/RS27 engines built by late 2013:
+                           683 track, 588 dyno. >2 million km run     [PUB]
+
+--------------------------------------------------------------------------------
+9. DEVELOPMENT HISTORY (RS26 -> RS27)
+--------------------------------------------------------------------------------
+  Oct 2004  RS26 spec issued. Used as many RS25 V10 parts as possible
+            (same scavenging, oil and water circuit concepts)
+  2006      RS26: 680 -> 700 bhp over the season. 70-100 piston design
+            iterations after crown cracking at high rpm. B-spec at Imola:
+            new head, insulated ports, new cams, exhausts. 100 bar
+            injection from the French GP
+  2007      RS27 homologated and frozen. Rev limit 19,000
+  2008      Standard McLaren ECU (no launch control or engine braking aids)
+  2009      18,000 rpm limit and 8 engines per season. KERS introduced.
+            One-off retune: injectors, trumpets and inlet ports. ~6% better
+            fuel efficiency
+  2010-11   Exhaust-blown diffusers, off-throttle blowing
+  2011-12   Pistons redesigned for longer life. Conrods reinforced.
+            Crankshaft layout and installation revised
+  2012      Lotus E20 season. Exhaust exit position fixed, off-throttle
+            blowing banned
+  Total     +50 bhp from the first V8 to the last. +30-40 bhp from 2007.
+            58+ wins and 4 drivers' titles (Vettel 2010-2013)
+
+--------------------------------------------------------------------------------
+10. THINGS THAT ARE NOT PUBLIC
+--------------------------------------------------------------------------------
+  Renault never released these, and you won't find them online:
+  exact bore/stroke, compression ratio (thought to be ~13-14:1 [EST]),
+  valve sizes and included angle, cam profiles and timing, firing
+  order, rod length, bearing sizes, port shapes, trumpet lengths,
+  exhaust primary lengths, oil/water pump specs, and any drawings or
+  CAD. These were trade secrets.
+
+  A realistic path for a home build "inspired by" the RS27:
+   - Base the dimensions on the FIA rules (98 mm bore, 106.5 mm spacing,
+     90 deg flat-plane V8, 2.4 L)
+   - Or use a real production-derived flat-plane V8 as the donor
+   - Or buy a real ex-F1 V8. These do come up for sale through
+     historic-F1 specialists, but they need specialist rebuilds every
+     few hundred km
+
+--------------------------------------------------------------------------------
+SOURCES
+--------------------------------------------------------------------------------
+  - Racecar Engineering, "Renault RS27" F1 supplement (Nov 2013),
+    Andrew Cotton. Includes the official Renault tech-spec box.
+    https://porschecarshistory.com/wp-content/old/lib/magazines/RE/2014/RE2014-Renault_RS27.pdf
+  - FIA 2012 Formula One Technical Regulations (9 Mar 2012), Art. 5-8
+    https://argent.fia.com/web/fia-public.nsf/1D4C2EA8299BC731C12579BC0051FDB5/$FILE/1-2012%20TECHNICAL%20REGULATIONS%2009-03-2012.pdf
+  - FIA 2013 Formula One Technical Regulations, Art. 5.5, 5.9-5.11,
+    5.16-5.17 (same wording as 2012)
+    https://argent.fia.com/web/fia-public.nsf/7EE7D5392A94A532C1257A850051A2C9/$FILE/2013%20TECHNICAL%20REGULATIONS.pdf
+  - Auto123, "F1 Technique: Looking at the Renault Sport RS27"
+    https://www.auto123.com/en/news/f1-technique-looking-at-the-renault-sport-rs27-formula-1-engine/35495/
+  - Wikipedia, "Lotus E20"  https://en.wikipedia.org/wiki/Lotus_E20
+================================================================================
